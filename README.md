@@ -9,7 +9,7 @@ Sample usage:
 
 or in the .json file :
 
-    "app/source/home.less" : "public/js -plugins=malta-less"
+    "app/source/data/books.json" : "public/data -plugins=malta-json-minify"
 
 or in a script : 
 
