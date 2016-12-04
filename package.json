@@ -1,7 +1,7 @@
 {
   "name": "malta-json-minify",
-  "version": "0.0.1",
-  "description": "Mlata plugin to minify json files",
+  "version": "0.0.2",
+  "description": "Malta plugin to minify json files",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
     "malta",
     "malta plugin",
     "malta json",
+    "malta json minify",
     "malta json plugin"
   ],
   "author": "Federico Ghedina <federico.ghedina@gmail.com>",
