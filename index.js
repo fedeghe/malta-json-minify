@@ -11,10 +11,11 @@ function malta_json_uglify(o, options) {
 	o.content = o.content
 		.replace(/(^[\s|\t]*\/\*.*\*\/)\n/m, '')// multi-line comments
 		.replace(/(^[\s|\t]*\/\/.*)\n/m, '')	// single-line comments
-		.replace(/\"\s*(:|,)\s*\"/g, '"$1"')
+		.replace(/\s*(\:|\,)\s*/gm, '$1')
 		.replace(/,\n/g, ',')
 		.replace(/\s{2,}/g, ' ')
-		.replace(/[\n|\t]/g, '');
+		.replace(/[\n|\t]/g, '')
+		.replace(/\s?({|}|\[|\])\s?/g, '$1'); // remove some extra spaces
 	
 	return function (solve, reject){
 		try {
