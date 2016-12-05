@@ -9,6 +9,8 @@ function malta_json_uglify(o, options) {
 		pluginName = path.basename(path.dirname(__filename));
 
 	o.content = o.content
+		.replace(/(^[\s|\t]*\/\*.*\*\/)\n/m, '')// multi-line comments
+		.replace(/(^[\s|\t]*\/\/.*)\n/m, '')	// single-line comments
 		.replace(/\"\s*(:|,)\s*\"/g, '"$1"')
 		.replace(/,\n/g, ',')
 		.replace(/\s{2,}/g, ' ')
