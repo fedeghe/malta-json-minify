@@ -11,6 +11,7 @@ function malta_json_uglify(o, options) {
 	o.content = o.content
 		.replace(/\"\s*(:|,)\s*\"/g, '"$1"')
 		.replace(/,\n/g, ',')
+		.replace(/\s{2,}/g, ' ')
 		.replace(/[\n|\t]/g, '');
 	
 	return function (solve, reject){
