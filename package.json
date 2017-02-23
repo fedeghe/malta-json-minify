@@ -1,6 +1,6 @@
 {
   "name": "malta-json-minify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Malta plugin to minify json files",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,12 +17,12 @@
     "malta json plugin"
   ],
   "author": "Federico Ghedina <federico.ghedina@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fedeghe/malta-json-minify/issues"
   },
   "dependencies": {
-    "malta": ">=3.0.0"
+    "malta": ">=3.4.0"
   },
   "main": "index.js"
 }
