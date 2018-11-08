@@ -22,7 +22,7 @@
     "url": "https://github.com/fedeghe/malta-json-minify/issues"
   },
   "dependencies": {
-    "malta": ">=3.8.3"
+    "malta": ">=3.8.14"
   },
   "main": "index.js"
 }
