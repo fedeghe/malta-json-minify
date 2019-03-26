@@ -6,16 +6,15 @@ function malta_json_uglify(o, options) {
 	var self = this,
 		start = new Date(),
 		msg = "",
-		pluginName = path.basename(path.dirname(__filename));
+        pluginName = path.basename(path.dirname(__filename)),
+        obj;
 
 	o.content = o.content
 		.replace(/(^[\s|\t]*\/\*.*\*\/)\n/m, '')// multi-line comments
-		.replace(/(^[\s|\t]*\/\/.*)\n/m, '')	// single-line comments
-		.replace(/\s*(\:|\,)\s*/gm, '$1')
-		.replace(/,\n/g, ',')
-		.replace(/\s{2,}/g, ' ')
-		.replace(/[\n|\t]/g, '')
-		.replace(/\s?({|}|\[|\])\s?/g, '$1'); // remove some extra spaces
+        .replace(/(^[\s|\t]*\/\/.*)\n/m, '')	// single-line comments
+    
+    eval('obj = ' + o.content + ';');
+    o.content = JSON.stringify(obj);
 	
 	return function (solve, reject){
 		try {
