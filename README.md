@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-json-minify.svg)](http://badge.fury.io/js/malta-json-minify)
-[![Dependencies](https://david-dm.org/fedeghe/malta-json-minify.svg)](https://david-dm.org/fedeghe/malta-json-minify)
 [![npm downloads](https://img.shields.io/npm/dt/malta-json-minify.svg)](https://npmjs.org/package/malta-json-minify)
 [![npm downloads](https://img.shields.io/npm/dm/malta-json-minify.svg)](https://npmjs.org/package/malta-json-minify)  
 ---  
